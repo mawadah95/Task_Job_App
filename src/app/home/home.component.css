@@ -1,0 +1,84 @@
+/* Custom CSS to change the menu color to black */
+.custom-navbar {
+    background-color: black; /* Change background color to black */
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: white; /* Change text color to white */
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-color: white; /* Change hamburger icon color to white */
+}
+
+
+.features3 {
+    background-image: url('/assets/black.jpg'); /* Replace 'black.jpg' with the actual path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    height: 100vh; /* Set the height to 100vh to cover the entire viewport height */
+}
+
+
+/* .background-contain {
+    background-image: url('../../assets/black.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh; 
+    width: 150px;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+} */
+
+
+.features-image .item-wrapper img {
+    max-width: 100%; /* Set maximum width to 100% of its parent container */
+    height: auto; /* Maintain aspect ratio, ensuring the image doesn't get stretched */
+    max-height: 290px; /* Set maximum height to 200 pixels */
+}
+
+/* Add this to your CSS file */
+.features3 .text p {
+    font-size: 18px; /* Set the font size for <p> elements inside .features3 */
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+.features3 .text p.name,
+.features3 .text p.name2 {
+    display: inline-block; /* Make the <p> elements display inline-block to appear next to each other */
+    margin-right: 20px; /* Add some spacing between the <p> elements (adjust the value as needed) */
+}
+
+.custom-text-gray {
+    color: gray !important; /* Set text color to gray and use !important to override other styles */
+}
+.item-wrapper img {
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.item-wrapper img:hover {
+    transform: scale(1.2); /* Zoom in the image by 20% on hover */
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px; /* Set the font size for the list items */
+    font-family: "Times New Roman", Times, serif;/* Set the font family for the list items */
+    color: white; /* Set the text color for the list items */
+}
+
+/* Change font size, font family, and color for the icons */
+.icons-menu i {
+    font-size: 24px; /* Set the font size for the icons */
+    color: white; /* Set the text color for the icons */
+}
+

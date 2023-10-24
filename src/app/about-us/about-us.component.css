@@ -1,0 +1,56 @@
+/* Custom CSS to change the menu color to black */
+.custom-navbar {
+    background-color: black; /* Change background color to black */
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: white; /* Change text color to white */
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-color: white; /* Change hamburger icon color to white */
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px; /* Set the font size for the list items */
+    font-family: "Times New Roman", Times, serif;/* Set the font family for the list items */
+    color: white; /* Set the text color for the list items */
+}
+
+/* Change font size, font family, and color for the icons */
+.icons-menu i {
+    font-size: 24px; /* Set the font size for the icons */
+    color: white; /* Set the text color for the icons */
+}
+
+
+.features3 {
+    background-image: url('/assets/black.jpg'); /* Replace 'black.jpg' with the actual path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    height: 120vh; /* Set the height to 100vh to cover the entire viewport height */
+}
+
+.custom-card {
+    width: 50rem;
+    border: 2px solid #1f3f53;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-carousel .carousel-item img {
+    max-height: 400px; /* Set the maximum height for the images (adjust as needed) */
+    width: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the images horizontally */
+}

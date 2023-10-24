@@ -1,0 +1,153 @@
+<!-- <div class="container-fluid">
+    <div class="row justify-content-center align-items-center" style="min-height: 100vh;">
+      <div class="col-md-6 col-lg-4">
+        <form class="p-3 shadow rounded bg-light" (ngSubmit)="onSubmit()">
+      
+          <div class="form-group">
+            <label for="username" class="mb-1">User Name</label>
+            <input id="username" type="text" pInputText class="form-control" placeholder="Enter your username"
+                   [(ngModel)]="username" autocomplete="off"/>
+          </div>
+  
+      
+          <div class="form-group mt-3">
+            <label for="password" class="mb-1">Password</label>
+            <input id="password" type="password" pPassword class="form-control" placeholder="Enter your password"
+                   [(ngModel)]="password" autocomplete="off" />
+          </div>
+  
+        
+          <div class="form-row align-items-center mt-3">
+            <div class="col">
+              <div class="form-check">
+                <p-checkbox [(ngModel)]="rememberMe"></p-checkbox>
+                <label class="form-check-label mb-0" for="rememberMe">Remember me</label>
+              </div>
+            </div>
+  
+            <div class="col text-right">
+              <a href="#!" class="text-decoration-none">Forgot password?</a>
+            </div>
+          </div>
+
+          <button type="submit" pButton class="btn btn-primary btn-sm btn-block mt-3" label="Sign in"></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+ -->
+
+ <!-- <div class="container-fluid">
+    <div class="row justify-content-center align-items-center" style="min-height: 100vh;">
+      <div class="col-md-6 col-lg-4">
+        <form class="p-3 shadow rounded bg-light" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+          <div class="form-group">
+            <label for="form2Example1" class="mb-1">User Name</label>
+            <input type="text" id="form2Example1" class="form-control form-control-sm" placeholder="Enter your username"
+            formControlName="username" autocomplete="off" />
+          </div>
+  
+
+          <div class="form-group mt-3">
+            <label for="form2Example2" class="mb-1">Password</label>
+            <input type="password" id="form2Example2" class="form-control form-control-sm" placeholder="Enter your password"
+            formControlName="password" autocomplete="off"  />
+          </div>
+  
+   
+          <div class="form-row align-items-center mt-3">
+            <div class="col">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                <label class="form-check-label mb-0" for="form2Example31"> Remember me </label>
+              </div>
+            </div>
+  
+            <div class="col text-right">
+              <a href="#!" class="text-decoration-none">Forgot password?</a>
+            </div>
+          </div>
+  
+    
+          <button type="submit" class="btn btn-primary btn-sm btn-block mt-3">Sign in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+    -->
+
+    <section class="menu1" id="menu1-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-black custom-navbar">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#" style="color: white;">
+                  <img src="assets/job-seeker (1).png" alt="" style="height: 2rem; ">&nbsp;&nbsp;
+                  Jobs App 
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                      <li class="nav-item">
+                          <a class="nav-link" href="/registration">Registration</a>
+                      </li>
+                     
+                      <li class="nav-item">
+                          <a class="nav-link" href="about-us">About Us</a>
+                      </li>
+               
+                  </ul>
+                  <div class="icons-menu">
+                      <a class="iconfont-wrapper" href="#" target="_blank">
+                          <i class="fab fa-facebook p-2"></i>
+                      </a>
+                      <a class="iconfont-wrapper" href="#" target="_blank">
+                          <i class="fab fa-twitter p-2"></i>
+                      </a>
+                      <a class="iconfont-wrapper" href="#" target="_blank">
+                          <i class="fab fa-instagram p-2"></i>
+                      </a>
+                  </div>
+                  
+                  
+              </div>
+          </div>
+      </nav>
+  </section>
+  <br>
+  <section class="features3">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center" style="min-height: 70vh;">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header">Login</div>
+            <div class="card-body">
+              <form (ngSubmit)="onSubmit()" class="p-3 shadow rounded bg-light">
+                <div class="form-group d-flex flex-column mb-2">
+                  <label for="username" class="col-form-label col-3">User name</label>
+                  <input type="text" id="username" class="form-control form-control-sm"  placeholder="Enter your email" [(ngModel)]="username" name="username" required>
+                </div>
+               
+                <div class="form-group d-flex flex-column mb-2">
+                  <label for="password" class="col-form-label col-3">Password</label>
+                  <input type="password" id="password" class="form-control form-control-sm" placeholder="Enter your password"  [(ngModel)]="password" name="password" required>
+                </div>
+               
+        
+                <button type="submit" class="btn btn-primary btn-sm btn-block mt-3" style="width: 75px;">Login</button>
+                
+                
+              
+              </form>
+              <a href="registration"> 
+                <button class="btn btn-primary btn-sm btn-block mt-3" style="width: 75px;">Register</button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>

@@ -1,0 +1,123 @@
+<section class="menu1" id="menu1-0">
+  <nav class="navbar navbar-expand-lg navbar-light bg-black custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: white;">
+        <img src="assets/job-seeker (1).png" alt="" style="height: 2rem; ">&nbsp;&nbsp;
+        Jobs App 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    
+          <li class="nav-item">
+            <a class="nav-link" href="Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/job-provider/jobs">Jobs Available</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/jop-seeker/user-profile">My Profile</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us">About Us</a>
+          </li>
+    
+        </ul>
+        <div class="icons-menu">
+          <a class="iconfont-wrapper" href="#" target="_blank">
+            <i class="fab fa-facebook p-2"></i>
+          </a>
+          <a class="iconfont-wrapper" href="#" target="_blank">
+            <i class="fab fa-twitter p-2"></i>
+          </a>
+          <a class="iconfont-wrapper" href="#" target="_blank">
+            <i class="fab fa-instagram p-2"></i>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+  </nav>
+</section>
+<br>
+
+
+<section class="features3">
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-body p-3 shadow rounded bg-light">
+          <br>
+          <i class="fas fa-user fa-3x mb-3"></i>
+          <h2 class="card-title">My Profile</h2>
+
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+          <div class="form-group d-flex flex-row mb-3 align-items-center">
+            <label class="col-form-label col-4">Full Name:</label>
+            <span class="ml-2">{{ user?.fullName }}</span>
+          </div>
+            </div>
+            <div class="col-md-6 mb-3">
+          <div class="form-group d-flex flex-row mb-3 align-items-center">
+            <label class="col-form-label col-6">Summary Introduction:</label>
+            <span>{{ user?.summary }}</span>
+          </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+          <div class="form-group d-flex flex-row mb-3 align-items-center">
+            <label class="col-form-label col-3">Skills:</label>
+            <span>{{ user?.skills }}</span>
+          </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+          <div class="form-group d-flex flex-row mb-3 align-items-center">
+            <label class="col-form-label col-2">Age:</label>
+            <span>{{ calculateAge(user?.birthdate) }}</span>
+          </div></div></div>
+
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+          <div class="form-group d-flex flex-row mb-3 align-items-center">
+            <label class="col-form-label col-3">Email:</label>
+            <span>{{ user?.email }}</span>
+          </div></div>
+          <div class="col-md-4 mb-3">
+          <div class="form-group d-flex flex-row mb-3 align-items-center">
+            <label class="col-form-label col-7">Phone Number:</label>
+            <span>{{ user?.phoneNumber }}</span>
+          </div>
+          </div></div>
+
+          <div class="row">
+            <div class="col-md-5 mb-3">
+          <div class="form-group d-flex flex-row mb-3 align-items-center">
+            <label class="col-form-label col-4">&nbsp;Location:</label>
+            <span>{{ user?.location }}</span>
+          </div></div>
+
+          <div class="col-md-7 mb-3">
+          <div class="form-group d-flex flex-row mb-3 align-items-center">
+            <label class="col-form-label col-6">&nbsp;&nbsp;CV Link:</label>
+            <a *ngIf="user?.cvFile" [href]="user?.cvFile" target="_blank">View CV</a>
+            <span *ngIf="!user?.cvFile">CV not uploaded</span>
+          </div>
+        </div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

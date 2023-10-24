@@ -1,0 +1,160 @@
+<section class="menu1" id="menu1-0">
+  <nav class="navbar navbar-expand-lg navbar-light bg-black custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: white;">
+        <img src="assets/job-seeker (1).png" alt="" style="height: 2rem; ">&nbsp;&nbsp;
+        Jobs App 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/job-provider/jobs">Jobs Available</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/jop-seeker/user-view">View Profile</a>
+      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us">About Us</a>
+          </li>
+    
+        </ul>
+        <div class="icons-menu">
+          <a class="iconfont-wrapper" href="#" target="_blank">
+            <i class="fab fa-facebook p-2"></i>
+          </a>
+          <a class="iconfont-wrapper" href="#" target="_blank">
+            <i class="fab fa-twitter p-2"></i>
+          </a>
+          <a class="iconfont-wrapper" href="#" target="_blank">
+            <i class="fab fa-instagram p-2"></i>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+  </nav>
+</section>
+<br>
+
+<section class="features3">
+  <section class="user-profile">
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body p-3 shadow rounded bg-light">
+              <br>
+              <i class="fas fa-user fa-3x mb-3"></i>
+              <h2 class="card-title">User Profile</h2>
+
+              <br>
+              <br>
+              <div class="row mb-3">
+
+
+                <!-- Full Name -->
+                <div class="col-6">
+                  <div class="form-group d-flex flex-column">
+                    <label for="fullName" class="col-form-label col-3">Full Name</label>
+                    <input type="text" id="fullName" class="form-control" [(ngModel)]="user.fullName" required>
+                  </div>
+                </div>
+
+                <!-- Profile Image Upload -->
+                <div class="col-6">
+                  <div class="form-group d-flex flex-column">
+                    <label for="profileImage" class="col-form-label col-3">Profile Image</label>
+                    <input type="file" id="profileImage" class="form-control-file" (change)="onFileSelected($event)">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <!-- Email -->
+                <div class="col-md-6 mb-3">
+                  <div class="form-group d-flex flex-column">
+                    <label for="email" class="col-form-label col-2">Email</label>
+                    <input type="email" id="email" class="form-control" [(ngModel)]="user.email" required>
+                  </div>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="col-md-6 mb-3">
+                  <div class="form-group d-flex flex-column">
+                    <label for="phoneNumber" class="col-form-label col-4">Phone Number</label>
+                    <input type="tel" id="phoneNumber" class="form-control" [(ngModel)]="user.phoneNumber" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+              
+              
+                <!-- Location -->
+                <div class="col-md-6">
+                  <div class="form-group d-flex flex-column">
+                    <label for="location" class="col-form-label col-2">Location</label>
+                    <input type="text" id="location" class="form-control" [(ngModel)]="user.location" required>
+                  </div>
+                </div>
+
+                <!-- Age -->
+                <div class="col-md-6">
+                  <div class="form-group d-flex flex-column">
+                    <label for="age" class="col-form-label col-2">Age</label>
+                    <p-calendar class="col-md-6" [(ngModel)]="user.birthdate" inputId="age" dateFormat="yy-mm-dd" [yearRange]="yearRange"></p-calendar>
+                  </div>
+                </div>
+              </div>
+              
+
+
+              <div class="row mb-3">
+                <!-- Summary Introduction -->
+                <div class="col-md-6">
+                  <div class="form-group d-flex flex-column">
+                    <label for="summary" class="col-form-label col-5">Summary Introduction</label>
+                    <textarea id="summary" class="form-control" [(ngModel)]="user.summary"></textarea>
+                  </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="col-md-6">
+                  <div class="form-group d-flex flex-column">
+                    <label for="skills" class="col-form-label col-6">Skills (comma-separated)</label>
+                    <input type="text" id="skills" class="form-control" [(ngModel)]="user.skills" required>
+                  </div>
+                </div>
+              </div>
+
+             
+              <!-- Download CV 
+              <div class="form-group d-flex flex-column mb-3">
+                <a href="{{ user.cvLink }}" download="resume.pdf" class="col-form-label col-2">Download CV</a>
+              </div>-->
+              <div class="form-group d-flex flex-column mb-3">
+                <label for="cv" class="col-form-label col-2">Upload CV</label>
+                <input type="file" id="cv" class="form-control-file" (change)="onFileSelected($event)">
+              </div>
+              
+              
+
+              <!-- Save Button -->
+              <button class="btn btn-primary" (click)="saveUserProfile()">Save Profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<!--  <input type="number" id="age" class="form-control datepicker" [(ngModel)]="user.age" required>-->

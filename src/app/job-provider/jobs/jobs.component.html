@@ -1,0 +1,147 @@
+<section class="menu1" id="menu1-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: white;">
+                <img src="assets/job-seeker (1).png" alt="" style="height: 2rem; ">&nbsp;&nbsp;
+             Jobs App 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="Home">Home</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/jop-seeker/user-profile">My Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/jop-seeker/user-view">View Profile</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us">About Us</a>
+                    </li>
+                
+                </ul>
+                <div class="icons-menu">
+                    <a class="iconfont-wrapper" href="#" target="_blank">
+                        <i class="fab fa-facebook p-2"></i>
+                    </a>
+                    <a class="iconfont-wrapper" href="#" target="_blank">
+                        <i class="fab fa-twitter p-2"></i>
+                    </a>
+                    <a class="iconfont-wrapper" href="#" target="_blank">
+                        <i class="fab fa-instagram p-2"></i>
+                    </a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+<br>
+
+<section class="features3">
+
+  <div class="container">
+    <div class="container d-flex justify-content-center align-items-center" style="height: 140vh;">
+      <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let job of jobs">
+          <div class="card job-card"> <!-- Added custom class 'job-card' -->
+            <img class="card-img-top" [src]="'assets/' + job.image" alt="Card image cap" height="210" width="50">
+            <div class="card-body">
+              <h5 class="card-title">{{ job.title }}</h5>
+              <p class="card-text">{{ job.description }}</p>
+              <button class="btn btn-primary" (click)="applyForJob(job.title)">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+    <!-- <div class="container">
+        <div class="container d-flex justify-content-center align-items-center" style="height: 70vh;">
+            <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/pdo3.jpg" alt="Card image cap" height="210" width="50">
+                <div class="card-body">
+                  <h5 class="card-title">Engineering </h5>
+                  <p class="card-text">To identify training and employment opportunities for young Omanis, beyond the oil & gas sector                </p>
+                  <button class="btn btn-primary" (click)="applyForJob()">Apply</button>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/voda.png" alt="Card image cap" height="210" width="50">
+                <div class="card-body">
+                  <h5 class="card-title">Network Operator</h5>
+                  <p class="card-text">. We are looking for individuals with an entrepreneurial mindset who get excited by challenges and constant change.</p>
+                  <a href="#" class="btn btn-primary">Apply</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/datap.jpg" alt="Card image cap" height="210" width="50">
+                <div class="card-body">
+                  <h5 class="card-title">Senior Infrastructure Specialist</h5>
+                  <p class="card-text">nstalls, configures and maintains approved system hardware and software components.</p>
+                  <a href="#" class="btn btn-primary">Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container d-flex justify-content-center align-items-center" style="height: 70vh;">
+            <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/glob.jpg" alt="Card image cap" height="210" width="50">
+                <div class="card-body">
+                  <h5 class="card-title">Senior SAP Consultant</h5>
+                  <p class="card-text"> We understand the challenges and highs of trying to maintain multiple teams in multiple technology/product areas.</p>
+                  <a href="#" class="btn btn-primary">Apply</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/insight.jpg" alt="Card image cap" height="210" width="50">
+                <div class="card-body">
+                  <h5 class="card-title">Service Desk Analyst </h5>
+                  <p class="card-text">The Service Desk analyst will serve as the front line for the firm and will assist the organization in managing processes for Incident.</p>
+                  <a href="#" class="btn btn-primary">Apply</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-md-4 mb-4">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="assets/datap.jpg" alt="Card image cap" height="210" width="50">
+                <div class="card-body">
+                  <h5 class="card-title">Senior Infrastructure Specialist</h5>
+                  <p class="card-text">nstalls, configures and maintains approved system hardware and software components.</p>
+                  <a href="#" class="btn btn-primary">Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div> -->
+</section>
